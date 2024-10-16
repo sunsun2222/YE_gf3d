@@ -91,8 +91,8 @@ Pipeline *gf3d_pipeline_graphics_load(VkDevice device,const char *vertFile,const
 Pipeline *gf3d_pipeline_create_from_config(
     VkDevice device,
     const char *configFile,
-    VkExtent2D extent,
-    Uint32 descriptorCount,
+    VkExtent2D extent,          //basically window size/resolution
+    Uint32 descriptorCount,     //commands to describe per drawframe
     const VkVertexInputBindingDescription* vertexInputDescription,
     const VkVertexInputAttributeDescription * vertextInputAttributeDescriptions,
     Uint32 vertexAttributeCount,

@@ -25,6 +25,8 @@
 #include "gf3d_texture.h"
 #include "gf3d_draw.h"
 
+#include "entity.h"
+
 extern int __DEBUG;
 
 static int _done = 0;
@@ -74,6 +76,8 @@ int main(int argc,char *argv[])
     gf3d_draw_init();//3D
     gf2d_draw_manager_init(1000);//2D
     
+    entity_system_init(1000);
+
     //game init
     srand(SDL_GetTicks());
     slog_sync();

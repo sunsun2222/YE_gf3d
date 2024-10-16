@@ -27,6 +27,8 @@ layout(binding = 0) uniform UniformBufferObject
 {
     MeshUBO         mesh;
     MaterialUBO     material;   //this may become an array
+    vec4            lightDer;
+    vec4            lightColor;
 }ubo;
 
 layout(binding = 1) uniform sampler2D texSampler;

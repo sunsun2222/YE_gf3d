@@ -40,6 +40,9 @@ typedef struct
 {
     MeshUBO         mesh;
     MaterialUBO     material;   //this may become an array
+    //add light color, pos and dir Vector4Ds to here for a start on shaders
+    //adding angle and brightness floats here to define where the light is coming from
+    //and other values, add these all to default.frag file's UBO
 }ModelUBO;
 
 /**

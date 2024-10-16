@@ -180,7 +180,7 @@ void gf3d_pipeline_queue_render(
     Uint32 vertexCount,
     VkBuffer indexBuffer,
     void *uboData,
-    Texture *texture)
+    Texture *texture) //assumes one texture
 {
     PipelineDrawCall *drawCall;
     if (!pipe)return;
